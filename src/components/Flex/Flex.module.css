@@ -1,0 +1,18 @@
+.flexWrapper {
+    display: var(--display, flex);
+    align-items: var(--alignItems, initial);
+    justify-content: var(--justifyContent, initial);
+    flex-direction: var(--direction, row);
+    flex-wrap: var(--wrap, nowrap);
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.flexChild {
+    flex-grow: var(--grow, 0);
+    flex-basis: var(--basis, 0);
+    flex-shrink: var(--shrink, auto);
+    flex: var(--flex);
+}

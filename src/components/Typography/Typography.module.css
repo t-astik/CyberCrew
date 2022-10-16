@@ -1,0 +1,56 @@
+.typography {
+  --fontSize: var(--size, 1rem);
+  --font-family: 'Outfit';
+  --lineHeight: 1.25;
+  --color: inherit;
+  --fontWeight: var(--weight, 400);
+  --textAlign: var(--align, initial);
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
+  color: var(--color);
+  font-weight: var(--fontWeight);
+  text-align: var(--textAlign);
+}
+
+.h1 {
+  --size: 78px;
+  --weight: bold;
+}
+
+.h2 {
+  --size: 36px;
+  --weight: medium;
+}
+
+.h3 {
+  --size: 22px;
+  --weight: normal;
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    --size: 50px;
+  }
+
+  .h2 {
+    --size: 24px;
+  }
+
+  .h3 {
+    --size: 16px;
+  }
+}
+
+@media (max-width: 541px) {
+  .h1 {
+    --size: 30px;
+  }
+
+  .h2 {
+    --size: 24px;
+  }
+
+  .h3 {
+    --size: 18px;
+  }
+}

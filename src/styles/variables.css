@@ -1,0 +1,15 @@
+:root{
+    --accent: #FF6026;
+    --dark-primary: #020000;
+    --light-primary: #FFFFFF;
+
+    --success: #52FF00;
+    --error: #FF0000;
+
+    --transition: .4s ease-in-out;
+
+    /* Layout values */
+    --max-width-mobile: 600px;
+    --max-width-tablet: 900px;
+    --max-width-desktop: 1800px;
+}

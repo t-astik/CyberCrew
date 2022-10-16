@@ -1,0 +1,43 @@
+.imageContainer {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    bottom: -22% !important;
+}
+
+.switcher {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.leftSwitcher {
+    left: 5%;
+}
+
+.rightSwitcher {
+    right: 5%;
+}
+
+
+@media (max-width: 600px) {
+    .image {
+        width: 85% !important;
+        height: auto !important;
+        min-width: 0 !important; 
+        min-height: 0 !important;
+        bottom: -30% !important;
+    }
+    .switcher {
+        top: 40%;
+    }
+}

@@ -1,0 +1,72 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
+    background: linear-gradient(
+        96.81deg,
+        rgba(255, 255, 255, 0.15) 6.97%,
+        rgba(255, 255, 255, 0.15) 132.4%
+    );
+    box-shadow: 34.26px 4px 52.4px rgba(0, 7, 72, 0.25);
+    padding: 20px 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(49.24px);
+
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.6928px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+    .wrapper {
+        padding: 15px 20px;
+        width: 220px;
+    }
+    .ETH {
+        font-size: 20px!important;
+        font-weight: 400 !important;
+    }
+    .Bid {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    .USD {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+    .procent {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 15px 20px;
+        width: 220px;
+    }
+    .ETH {
+        font-size: 20px!important;
+        font-weight: 400 !important;
+    }
+    .Bid {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    .USD {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+    .procent {
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+}

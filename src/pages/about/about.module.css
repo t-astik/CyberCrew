@@ -1,0 +1,232 @@
+.aboutPage {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background: url('~src/public/images/about/aboutPageBG.jpeg') center/cover;
+    font-family: 'Outfit', sans-serif;
+}
+
+.p {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+.aboutPageBG {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69));
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
+.metaBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    padding-top: 150px;
+}
+
+.name {
+    font-family: 'Outfit', sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 82px;
+    
+    color: #FFFAFA;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-width: 623px;
+    margin-bottom: 50px;
+}
+
+.description {
+    font-family: 'Outfit', sans-serif !important;
+    font-style: normal;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+    max-width: 577px;
+}
+
+.robotBlock {
+    position: relative;
+}
+
+.ellipseContainer {
+    position: absolute;
+    top: -15%;
+    left: -35%;
+    width: 1000px;
+    height: 1000px;
+}
+
+.info {
+    width: 315px;
+    position: absolute;
+    top: 28%;
+    right: -21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px 33px;
+    background: linear-gradient(96.81deg, rgba(255, 255, 255, 0.15) 6.97%, rgba(255, 255, 255, 0.15) 132.4%);
+    box-shadow: 34.26px 4px 52.4px rgb(0 7 72 / 25%);
+    -webkit-backdrop-filter: blur(49.24px);
+    backdrop-filter: blur(49.24px);
+    border-radius: 12px;
+    font-family: 'Outfit', sans-serif !important;;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 109.5%;
+    color: #FFFFFF;
+}
+
+.robotContainer {
+    position: relative;
+}
+
+@media (min-width: 1150px) and (max-width: 1390px) {
+    .name {
+        font-size: 64px;
+    }
+    .description {
+        width: 450px;
+    }
+    .ellipseContainer {
+        left: -10%;
+        width: 600px;
+        height: 1000px;
+    }
+    .ellipseContainer > span {
+        width: 500px !important;
+        height: 1000px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .container {
+        padding-right: 2%;
+    }
+    .name {
+        font-size: 54px;
+    }
+    .info {
+        width: 220px;
+        right: 0%;
+    }
+    .ellipseContainer {
+        left: -10%;
+        width: 600px;
+        height: 1000px;
+    }
+    .ellipseContainer > span {
+        width: 500px !important;
+        height: 1000px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+    .ellipse {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .metaBlock {
+        padding-top: 0;
+    }
+    .name {
+        min-width: 383px;
+        font-size: 44px
+    }
+    .description {
+        max-width: 290px;
+    }
+    .robotBlock {
+        margin-right: -60px;
+    }
+    .ellipseContainer {
+        left: -10%;
+        width: 400px;
+        height: 1000px;
+    }
+    .ellipseContainer > span {
+        width: 400px !important;
+        height: 1000px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutPage {
+        background: #0F0502;
+    }
+    .aboutPageBG {
+        background: initial;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 50px;
+        margin-top: 30px;
+    }
+    .metaBlock {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0%;
+    }
+    .name {
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        line-height: 43px !important;
+        max-width: 250px;
+        min-width: 0;
+    }
+    .description {
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 144% !important;
+    }
+    .robotContainer {
+        width: 300px;
+        height: 450px;
+        left: -60px;
+    }
+    .robotImg {
+        margin: 0 !important;
+        width: 300px !important;
+        height: 450px !important;
+    }
+    .info {
+        width: 175px;
+        font-weight: 500  !important;
+        font-size: 14px  !important;
+        line-height: 109.5%  !important;
+        top: 30%;
+        right: -20%;
+        padding: 25px 25px;
+    }
+    .information > span {
+        color: rgba(255, 61, 0, 1);
+    }
+    .ellipseContainer {
+        top: 65%;
+        left: 80%;
+        width: 150px;
+        height: 150px;
+    }
+    .ellipseContainer > span {
+        width: 200px !important;
+        height: 200px !important;
+    }  
+}

@@ -1,0 +1,121 @@
+
+.wrapper {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.83);
+  position: fixed;
+  align-items: flex-start;
+  z-index: 70;
+  padding: 63px 119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px 0 50px;
+}
+.active {
+  top: 0;
+  right: 0;
+  animation: burgerActive 0.5s ease;
+}
+.disabled {
+  top: 0;
+  right: -150vw;
+  animation: burgerDisabled 0.5s ease-in;
+}
+.closeBtn {
+  width: auto;
+  position: relative;
+  top: 0;
+  right: -100%;
+}
+.connectWallet {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.info {
+  width: 320px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #a8a4a4;
+  margin-bottom: 149px;
+}
+.types {
+  width: 100%;
+  display: flex;
+  margin-bottom: 41px;
+  align-items: center;
+}
+.type {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  width: 50%;
+  display: flex;
+}
+.buttonConnect {
+  display: flex;
+  align-items: center;
+  column-gap: 47px;
+  padding: 20px 94px;
+  position: relative;
+}
+.closeWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 19;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes burgerActive {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes burgerDisabled {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -100vw;
+  }
+}
+@media (max-width: 600px) {
+  .buttonConnect {
+    padding: 10px 35px !important;
+  }
+}
+

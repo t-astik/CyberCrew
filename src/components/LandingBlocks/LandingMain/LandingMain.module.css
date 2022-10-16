@@ -1,0 +1,307 @@
+.relativeContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+    padding-left: 117px;
+    z-index: 0;
+}
+
+.firstPart {
+    width: 577px;
+    padding: 90px 0;
+}
+
+.createBtn {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    padding: 19px 55px;
+}
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 82px;
+    
+    color: #fffafa;
+    margin: 0;
+}
+
+.title span {
+    color: #ff6026;
+}
+
+.subtitle {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    
+    color: #ffffff;
+    margin: 40px 0 50px;
+}
+
+.btnsBlock {
+    display: flex;
+    column-gap: 35px;
+    width: 100%;
+}
+
+.inventoryBtn {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+    width: auto;
+    height: auto;
+    padding: 18px 40px;
+}
+
+.socialNetworks {
+    cursor: pointer;
+    display: block;
+    margin-top: 140px;
+}
+.socialNetworksMob {
+    display: none;
+}
+
+.secondPart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.secondPartBox {
+    position: relative;
+    width: 1100px;
+    max-width: 75%;
+    font-size: 0;
+}
+
+.price {
+    position: absolute;
+    top: 60%;
+    right: 2%;
+}
+
+.ellipseContainer {
+    position: absolute;
+    top: 5%;
+    left: initial;
+}
+
+.ellipseContainerMob {
+    display: none;
+}
+
+.vector {
+    z-index: -1;
+    position: absolute;
+    top: 51%;
+    top: 51%;
+    left: 46%;
+    transform: translate(-40%, -10%);
+    width: 851px;
+}
+
+@media (max-width: 1510px) {
+    .title {
+        font-weight: 800;
+        font-size: 63px;
+        line-height: 60px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        width: 66%;
+    }
+
+    .btnsBlock {
+        column-gap: 15px;
+    }
+
+    .createBtn {
+        padding: 19px 25px;
+    }
+
+    .vector {
+        top: 38%;
+        left: 50%;
+        width: 650px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 375px;
+    }
+
+    .subtitle {
+        margin: 20px 0 20px;
+    }
+
+    .btnsBlock {
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .createBtn {
+        font-size: 15px;
+        padding: 15px 25px;
+        width: 210px;
+        margin-bottom: 10px;
+    }
+
+    .inventoryBtn {
+        width: 168px;
+        font-size: 15px;
+        padding: 15px 10px;
+    }
+
+    .socialNetworks {
+        margin-top: 20px;
+    }
+
+    .vector {
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .firstPart {
+        margin-top: 40px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .secondPart {
+        position: relative;
+        margin-left: -36px;
+        margin-right: -36px;
+
+    }
+
+    .secondPartBox {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .vector {
+        display: none;
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 39px;
+    }
+
+    .subtitle {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        width: 100%;
+        max-width: 443px;
+    }
+
+    .btnsBlock {
+        flex-direction: column;
+    }
+
+    .createBtn {
+        padding: 15px 55px;
+        width: 234px;
+        height: 62px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        width: 80%;
+    }
+
+    .inventoryBtn {
+        padding: 15px 55px;
+        width: 234px;
+        height: 62px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        width: 80%;
+    }
+
+    .socialNetworks {
+        display: none;
+        margin-top: 20px;
+    }
+
+    .socialNetworksMob {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        bottom: 9%;
+        left: 3%;
+    }
+
+    .subtitle {
+        margin: 40px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ellipse {
+        display: none;
+    }
+
+    .ellipseContainerMob {
+        display: block;
+        position: absolute;
+        transform: translateY(-25%);
+        right: 0%;
+        filter: blur(85px);
+    }
+
+    .ellipseContainerMob > span {
+        width: 100% !important;
+        height: 400px !important;
+    }
+}

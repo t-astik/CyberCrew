@@ -1,0 +1,357 @@
+.mintPage {
+    background: #000000;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    padding-top: 180px;
+    padding-bottom: 140px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.metaBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Outfit', sans-serif !important;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 78px;
+    line-height: 82px;
+    
+    color: #FFFAFA;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 665px;
+    margin-bottom: 70px;
+}
+.title > span > span {
+    text-transform: lowercase
+}
+
+.openSeaBtn {
+    margin-right: 40px;
+}
+
+.socialNetworksIcon {
+    margin-top: 213px;
+    margin-right: 20px;
+}
+
+.socialNetworksMob {
+    display: none;
+}
+
+.robotBlock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.topEllipseContainer {
+    position: absolute;
+    top: -65%;
+    left: -34%;
+}
+
+.middleEllipseContainer {
+    position: absolute;
+    top: 60%;
+    right: 2%;
+}
+
+.middleEllipseContainer > span {
+    width: 300px!important;
+    height: 300px!important;
+}
+
+
+.bottomEllipseContainer {
+    position: absolute;
+    top: -4%;
+    right: -32%;
+}
+
+.card {
+    position: absolute;
+    background: linear-gradient(155.14deg, rgba(255, 255, 255, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
+    filter: drop-shadow(0px 4.28214px 52.4562px rgba(0, 7, 72, 0.12));
+    backdrop-filter: blur(26.7634px);
+    border-radius: 21.4107px;
+    transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+}
+
+.top {
+    width: 445px;
+    height: 290px;
+    top: -8%;
+    right: 23%;
+}
+
+.bottom {
+    width: 427px;
+    height: 563px;
+    top: 3%;
+    right: 13%;
+}
+
+.robotImgContainer {
+    width: 611px !important;
+    position: relative;
+    height: 513px;
+}
+
+.robotImgContainer > span {
+    position: absolute !important;
+    width: 611px !important;
+}
+
+.robotImg {
+    top: -14px !important;
+    left: -16px !important;
+    margin: 0 !important;
+    width: 611px !important;
+    height: 516px !important;
+    min-width: 611px !important;
+    min-height: 516px !important;
+}
+
+.robotImgMob {
+    display: none !important;
+}
+
+.price {
+    position: absolute;
+    right: -3%;
+    bottom: -23%;
+}
+
+@media (min-width: 1320px) and (max-width: 1440px) {
+    .title {
+        font-size: 64px;
+        width: 540px;
+    }
+}
+
+@media (min-width: 1230px) and (max-width: 1320px) {
+    .title {
+        font-size: 54px;
+        width: 457px;
+    }
+}
+
+@media (min-width: 1050px) and (max-width: 1230px) {
+    .container {
+        padding-right: 2%;
+    }
+    .metaBlock {
+        z-index: 1;
+    }
+    .title {
+        font-size: 44px;
+        width: 412px;
+        line-height: 65px;
+    }
+    .btnsBlock {
+        width: 398px;
+    }
+    .openSeaBtn {
+        margin-right: 10px;
+    }
+    .bottom {
+        height: 530px;
+    }
+    .price {
+        width: 220px;
+        right: 30%;
+        bottom: -15%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1050px) {
+    .container {
+        flex-direction: column;
+    }
+    .title {
+        width: 510px;
+        font-size: 60px;
+    }
+    .robotBlock {
+        margin-top: 140px;
+    }
+    .socialNetworksDesktop {
+        display: none;
+    }
+    .socialNetworksMob {
+        z-index: 40;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        bottom: -22%;
+    }
+}
+
+@media (max-width: 600px) {
+    .mintPage {
+        background: #0F0502;
+    }
+    .content {
+        padding: 0%;
+        padding-bottom: 50px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .metaBlock {
+        z-index: 1;
+        width: 100%;
+        padding-top: 60px;
+        margin: 0px;
+    }
+    .title {
+        font-weight: 700 !important;
+        font-size: 30px !important;
+        line-height: 36px !important;
+        max-width: 328px;
+        min-width: 0;
+        margin-bottom: 60px;
+    }
+    .btnsBlock {
+        display: flex;
+        flex-direction: column;
+    }
+    .openSeaBtn {
+        margin-bottom: 20px;
+        width: 228px !important;
+        height: 69px !important;   
+    }
+    .gamestopBtn {
+        width: 228px !important;
+        height: 69px !important; 
+        margin-bottom: 110px;
+    }
+    .socialNetworksDesktop {
+        cursor: pointer;
+        display: none;
+    }
+    .socialNetworksMob {
+        z-index: 40;
+        cursor: pointer;
+        display: block;
+    }
+    .socialNetworksIcon {
+        margin-top: 12px;
+    }
+    /* .robotBlock {
+        align-items: center;
+    } */
+    .robotImgContainer > span {
+        width: 400px !important;
+    }
+    .card {
+        transform: matrix(0.98, 0, -0.22, 1, 0, 0);
+    }
+    .top {
+        width: 210px;
+        height: 150px;
+        top: -8%;
+        right: 40%;
+    }
+    .bottom {
+        width: 258px;
+        height: 300px;
+        top: 0%;
+        right: 13%;
+    }
+    .robotBlock {
+        flex-direction: column;
+    }
+    .robotImgContainer {
+        width: 400px !important;
+        position: relative;
+        height: 300px;
+        left: -30px;
+    }
+    .robotImg {
+        display: none !important;
+    }
+    .robotImgMob {
+        display: block !important;
+        margin: 0 !important;
+        width: 150px !important;
+        height: 300px !important;
+    }
+    .price {
+        right: -2%;
+        bottom: 87%;
+    }
+    .topEllipse {
+        width: 120px !important;
+        height: 240px !important;
+    }
+    .topEllipseContainer {
+        top: -55%;
+        left: -21%;
+        width: 350px;
+    }
+    .middleEllipse {
+        width: 100px !important;
+        height: 80px !important;
+    }
+    .middleEllipseContainer {
+        top: 60%;
+        right: 5%;
+    }
+    .middleEllipseContainer > span {
+        width: 150px!important;
+        height: 130px!important;
+    }
+    .bottomEllipse {
+        width: 120px !important;
+        height: 240px !important;
+    }
+    .bottomEllipseContainer {
+        transform: rotate(-35deg);
+        top: -68%;
+        right: -28%;
+        width: 508px;
+    }
+}
+
+@media (max-width: 415px) {
+    .price {
+        right: 8%;
+        bottom: 89%;
+    }
+    .bottom {
+        width: 258px;
+        height: 300px;
+        top: 0%;
+        right: 15%;
+    }
+}
+
+@media (max-width: 360px) {
+    .robotImgContainer {
+        left: -50px;
+    }
+    .price {
+        right: 12%;
+        bottom: 89%;
+    }
+    .bottom {
+        right: 17%;
+    }
+}

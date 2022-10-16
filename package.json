@@ -1,0 +1,78 @@
+{
+    "name": "cyber-crew",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky install",
+        "test": "jest",
+        "typecheck": "tsc --noEmit -p ."
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "jsdom",
+        "testRegex": "\\.spec\\.tsx?$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ],
+        "moduleDirectories": [
+            "node_modules",
+            "src",
+            "typings"
+        ],
+        "globals": {
+            "ts-jest": {
+                "tsconfig": "tsconfig.test.json"
+            }
+        }
+    },
+    "dependencies": {
+        "classnames": "2.3.2",
+        "clsx": "1.2.1",
+        "next": "12.2.5",
+        "rc-dialog": "8.9.0",
+        "rc-drawer": "5.1.0",
+        "react": "18.2.0",
+        "react-burger-menu": "3.0.8",
+        "react-dom": "18.2.0",
+        "react-responsive": "9.0.0",
+        "react-show-more-button": "1.0.0",
+        "react-slick": "0.29.0",
+        "react-svg": "15.1.7",
+        "slick-carousel": "1.8.1",
+        "swiper": "8.4.2"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "7.18.6",
+        "@commitlint/cli": "17.1.2",
+        "@commitlint/config-conventional": "17.1.0",
+        "@svgr/webpack": "6.3.1",
+        "@types/jest": "29.0.0",
+        "@types/node": "18.7.14",
+        "@types/react": "18.0.18",
+        "@types/react-burger-menu": "2.8.3",
+        "@types/react-dom": "18.0.6",
+        "@types/react-modal": "3.13.1",
+        "@types/react-slick": "0.23.10",
+        "eslint": "8.23.0",
+        "eslint-config-airbnb": "19.0.4",
+        "eslint-config-next": "12.2.5",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-jest": "27.0.1",
+        "eslint-plugin-prettier": "4.2.1",
+        "husky": "8.0.1",
+        "jest": "28.1.3",
+        "jest-environment-jsdom": "28.1.3",
+        "prettier": "2.7.1",
+        "ts-jest": "28.0.8",
+        "typescript": "4.8.2"
+    }
+}

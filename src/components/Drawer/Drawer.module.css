@@ -1,0 +1,30 @@
+.wrapper :global(.rc-drawer-content) {
+    background: rgba(0, 0, 0, 0.83);
+}
+
+.wrapper :global(.rc-drawer-mask) {
+    background: none;
+}
+
+.closeIconContainer  {
+    display: flex;
+    justify-content: flex-end;
+    padding: 63px 119px 0 0;
+}
+.closeIcon {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .wrapper :global(.rc-drawer-content-wrapper) {
+        width: 100% !important;
+    }
+
+    .closeIconContainer  {
+        padding: 55px 42px 0 0 !important;;
+    }
+
+    .wrapper :global(.rc-drawer-content) {
+        background: rgba(0, 0, 0, 0.95);
+    }
+}

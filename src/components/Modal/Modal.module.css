@@ -1,0 +1,38 @@
+.modal :global(.rc-dialog-mask) {
+    background: rgba(42, 44, 48, 0.95);
+}
+
+.modal :global(.rc-dialog-wrap) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal :global(.rc-dialog) {
+    width: auto;
+    margin: 0;
+}
+
+.modal :global(.rc-dialog-content) {
+    padding: 115px 130px;
+    background: rgba(102, 92, 92, 0.93);
+    border-radius: 19px
+}
+
+.modal :global(.rc-dialog-body) {
+    padding: 0px;
+}
+
+.modal :global(.rc-dialog-close) {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .modal :global(.rc-dialog-content) {
+        padding: 50px 20px;
+    }
+    .modal :global(.rc-dialog) {
+        width: 95%;
+    }
+    
+}

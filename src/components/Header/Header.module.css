@@ -1,0 +1,115 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.logoPartActive {
+    display: block;
+    padding: initial;
+    z-index: 41;
+}
+
+.logo {
+    position: relative;
+    z-index: 100;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    margin: 0;
+    
+    color: #ffffff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #ff3d00;
+}
+
+.connectBtn {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 11px 25px;
+    margin-right: 90px;
+    z-index: 2;
+}
+
+.connectBtnMob {
+    display: none;
+}
+
+.btnsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 336px;
+}
+
+.wallet {
+    margin-right: 130px;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    .connectBtn {
+        margin-right: 50px;
+    }
+    .wallet {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .connectBtn {
+        margin-right: 20px;
+    }
+    .wallet {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        padding: 20px 0;
+    }
+
+    .connectBtn {
+        margin-right: 0px;
+        display: none !important;
+    }
+
+    .wallet {
+        margin-right: 20px;
+    }
+
+    .connectBtnMob {
+        display: block !important;
+        margin-right: 20px;
+    }
+
+    .logoPartActive {
+        display: none;
+    }
+
+    .logo {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.02em;
+    }
+}

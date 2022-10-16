@@ -1,0 +1,122 @@
+.container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 312px;
+    background: linear-gradient(96.81deg, rgba(255, 255, 255, 0.15) 6.97%, rgba(255, 255, 255, 0.15) 132.4%);
+    box-shadow: 34.26px 4px 52.4px rgba(0, 7, 72, 0.25);
+    backdrop-filter: blur(49.24px);
+    border-radius: 12px;
+    padding: 14px 28px;
+    margin-bottom: 48px;
+}
+
+.carouselBlock {
+    width: 100%;
+}
+
+.metaBlock {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assetTitle {
+    margin: 0;
+    white-space: nowrap;
+    font-family: 'Outfit', sans-serif !important;;
+    font-style: normal;
+    line-height: 82px;
+    
+    color: #FFFFFF;
+}
+
+.container:hover .downloadBtn {
+    opacity: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 16px 72px;
+}
+
+.downloadBtn {
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.downloadBtn > span {
+    color: #ffffff;
+}
+
+.modalContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 130px;
+    grid-row-gap: 35px;
+}
+
+.formatBtn  > span {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+@media (min-width: 1125px) and (max-width: 1380px) {
+    .assetTitle {
+        font-size: 32px;
+    }
+    .downloadBtn {
+        padding: 16px 30px !important;
+    }
+}
+
+@media (min-width: 930px) and (max-width: 1125px) {
+    .downloadBtn {
+        padding: 16px 72px !important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 930px) {
+    .downloadBtn {
+        padding: 16px 36px !important;
+    }
+    .assetTitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modalContent {
+        grid-column-gap: 25px;
+        grid-row-gap: 16px;
+    }
+    
+    .formatBtn  > span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .container {
+        width: 100%;
+        height: 242px;
+        padding: 0px 16px;
+        margin-bottom: 16px;
+    }
+
+    .assetTitle {
+        font-size: 20px;
+    }
+
+    .metaBlock {
+        margin-top: 0px !important;
+    }
+}
+@media (max-width: 360px) {
+    .assetTitle {
+        font-size: 18px;
+    }
+}
+
